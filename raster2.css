@@ -1717,7 +1717,9 @@ h6 > a {
 .h5 > a:hover,
 .h6 > a:hover,
 h1 > a:hover,
-h2 > a:hover,
+h2 > a:hover {
+  color: #333;
+},
 h3 > a:hover,
 h4 > a:hover,
 h5 > a:hover,
@@ -2369,11 +2371,26 @@ img.right.bottom {
   opacity: 1;
 }
 :root {
-  --red: #ee2711;
-  --blue: #1871e9;
-  --green: #12c05b;
-  --yellow: #f9bf0f;
+  --red:          #F03009;
+  --red-orange:   #ff2e00;
+  --hot-orange:   #FF5C00; /* favicon */
+  --orange:       #ff7105;
+  --brown:        #716558;
+  --warm-yellow:  #FFE310;
+  --yellow:       #FFF310;
+  /*--yellow:       rgb(249, 191, 15);*/
+  --light-yellow: rgb(255, 255, 179);
+  --green:        rgb(18, 192, 91);
+  --ocean-green:  #008f5d;
+  --pear-green:   rgb(119, 221, 134);
+  --blue:         rgb(3, 102, 214);
+  --sunset-pink:  #ff7b81;
+  --light-pink:   #ffb3ba;
+  --xlight-pink:  #ffd1d9;
+  --dark-gray: #333;
+  --gray: hsla(0,0%,47.1%,0.8);
 }
+
 .red {
   color: var(--red);
 }
