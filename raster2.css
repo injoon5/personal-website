@@ -29,7 +29,7 @@
     var(--foreground-color-rgb),
     var(--foreground-color-a)
   );
-  --background-color: #fff;
+  --background-color: #333;
 }
 @supports (font-variation-settings: normal) {
   :root {
@@ -153,6 +153,7 @@ video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
+  color: white;
 }
 blockquote,
 q {
@@ -1688,9 +1689,7 @@ h1.xxxlarge {
   padding-bottom: calc(var(--lineHeight) * 0.25);
 }
 a {
-  text-decoration: underline;
-  -webkit-text-decoration: underline rgba(0, 0, 0, 0.3);
-  text-decoration: underline rgba(0, 0, 0, 0.3);
+  text-decoration: none !important;
   white-space: nowrap;
 }
 a:hover {
@@ -1704,7 +1703,9 @@ a:hover {
 .h6 > a,
 h1 > a,
 h2 > a,
-h3 > a,
+h3 > a {
+  color: var(--gray)
+},
 h4 > a,
 h5 > a,
 h6 > a {
@@ -1718,7 +1719,7 @@ h6 > a {
 .h6 > a:hover,
 h1 > a:hover,
 h2 > a:hover {
-  color: #333;
+  color: #fff;
 },
 h3 > a:hover,
 h4 > a:hover,
@@ -2387,8 +2388,7 @@ img.right.bottom {
   --sunset-pink:  #ff7b81;
   --light-pink:   #ffb3ba;
   --xlight-pink:  #ffd1d9;
-  --dark-gray: #333;
-  --gray: hsla(0,0%,47.1%,0.8);
+  --gray: rgba(255,255,255,0.6)
 }
 
 .red {
@@ -2416,3 +2416,10 @@ img.right.bottom {
   background-color: var(--yellow);
 }
 
+.h2-white {
+  color: white;
+}
+
+.h2-white:hover {
+  color: var(--gray)
+}
