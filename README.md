@@ -1,3 +1,3 @@
 # web-platform-aeonjd
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-aeonjd)
+injoon5's personal website based on rsms's Raster.
