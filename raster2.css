@@ -154,6 +154,7 @@ video {
   border: 0;
   vertical-align: baseline;
   color: white;
+  word-break: keep-all;
 }
 blockquote,
 q {
@@ -1259,8 +1260,8 @@ r-grid.debug > :nth-child(6n + 7) {
   --color: rgba(248, 110, 91, 0.3);
 }
 html {
-  font-family: var(--sansFont), var(--koreanFont), var(--tossFace), -system-ui, system-ui,
-    sans-serif;
+  font-family: var(--sansFont), var(--koreanFont), var(--tossFace), -system-ui,
+    system-ui, sans-serif;
   font-size: var(--fontSize);
   line-height: var(--lineHeight);
   background: var(--background-color);
@@ -1704,7 +1705,7 @@ a:hover {
 h1 > a,
 h2 > a,
 h3 > a {
-  color: var(--gray)
+  color: var(--gray);
 },
 h4 > a,
 h5 > a,
@@ -1875,6 +1876,9 @@ ol:not([start]) > li:before {
   height: var(--lineHeight);
   text-align: left;
 }
+p {
+  font-size: 16px;
+}
 table {
   --border-width: 1px;
   --border-opacity: 0.15;
@@ -1937,6 +1941,9 @@ table th[align='right'] {
 }
 p + table {
   margin-top: calc(var(--lineHeight) * 1.5 + var(--border-width) * -1);
+}
+time {
+  color: rgba(255, 255, 255, 0.4);
 }
 @media only screen and (max-width: 600px) {
   .only-large-window {
@@ -2372,23 +2379,23 @@ img.right.bottom {
   opacity: 1;
 }
 :root {
-  --red:          #F03009;
-  --red-orange:   #ff2e00;
-  --hot-orange:   #FF5C00; /* favicon */
-  --orange:       #ff7105;
-  --brown:        #716558;
-  --warm-yellow:  #FFE310;
-  --yellow:       #FFF310;
+  --red: #f03009;
+  --red-orange: #ff2e00;
+  --hot-orange: #ff5c00; /* favicon */
+  --orange: #ff7105;
+  --brown: #716558;
+  --warm-yellow: #ffe310;
+  --yellow: #fff310;
   /*--yellow:       rgb(249, 191, 15);*/
   --light-yellow: rgb(255, 255, 179);
-  --green:        rgb(18, 192, 91);
-  --ocean-green:  #008f5d;
-  --pear-green:   rgb(119, 221, 134);
-  --blue:         rgb(3, 102, 214);
-  --sunset-pink:  #ff7b81;
-  --light-pink:   #ffb3ba;
-  --xlight-pink:  #ffd1d9;
-  --gray: rgba(255,255,255,0.6)
+  --green: rgb(18, 192, 91);
+  --ocean-green: #008f5d;
+  --pear-green: rgb(119, 221, 134);
+  --blue: rgb(3, 102, 214);
+  --sunset-pink: #ff7b81;
+  --light-pink: #ffb3ba;
+  --xlight-pink: #ffd1d9;
+  --gray: rgba(255, 255, 255, 0.6);
 }
 
 .red {
@@ -2416,10 +2423,10 @@ img.right.bottom {
   background-color: var(--yellow);
 }
 
-.h2-white {
+.a-white {
   color: white;
 }
 
-.h2-white:hover {
-  color: var(--gray)
+.a-white:hover {
+  color: var(--gray);
 }
